@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>md08</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+	<legend><font size="6"><b>개인 정보 입력</b></font></legend>
+	<p>아 이 디: <input type="text" name="id" size="20">&nbsp;<input type="button" name="doublecheck" value="ID중복검사"></p>
+	<p>생년월일: <input type="date" name="date"></p>
+	<p>성 별: <label><input type="radio" name="gender" value="man">남성</label>&nbsp;
+		  <label><input type="radio" name="gender" value="woman">여성</label></p>
+	<p>E-mail: <input type="text" name="email" size="50"></p>
+	<p>메일수신: <label><input type="radio" name="mailagree" value="agree">수신동의</label>&nbsp;
+		      <label><input type="radio" name="mailagree" value="reject">수신거부</label></p>
+	<p>핸드폰: <select name="phone1">
+			<option value="010" selected>010</option>
+			<option value="011">011</option>
+			<option value="012">012</option>
+			<option value="019">019</option>
+		   </select>-<input type="text" name="phone2" size="4">-<input type="text" name="phone3" size="4"></p>
+	<p>직업: <select name="job">
+			<option value="student" selected>학생</option>
+			<option value="teacher">교사</option>
+			<option value="engineer">엔지니어</option>
+			<option value="gardener">정원사</option>
+			<option value="lawyer">변호사</option>
+		</select></p>
+	<p>취미: <label><input type="checkbox" name="hobby" value="shopping">쇼핑</label>&nbsp;
+		<label><input type="checkbox" name="hobby" value="internet">인터넷</label>&nbsp;
+		<label><input type="checkbox" name="hobby" value="music">음악감상</label>&nbsp;
+		<label><input type="checkbox" name="hobby" value="reading">독서</label>&nbsp;
+		<label><input type="checkbox" name="hobby" value="sports">스포츠</label></p>
+	<p>자기 소개: <textarea name="introduce" rows="10" cols="80"></textarea></p>
+    </fieldset><br>
+  &nbsp;<input type="submit" value="등록">
+  &nbsp;<input type="reset" value="초기화">
+  </form>
+</body>
+</html>
